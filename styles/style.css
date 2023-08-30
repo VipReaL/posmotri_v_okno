@@ -38,47 +38,185 @@ ol {
 }
 
 .content {
+  inline-size: 1140px;
+  block-size: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-rows: 534px;
+  gap: 30px;
 }
+
 .result {
+  align-self: end;
+  display: inline;
 }
+
 .result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
 }
+
 .result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
+
 .search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
+
 .search-form__fieldset {
+  border: none;
 }
+
 .search-form__fieldset-title {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
 }
+
 .search-form__label {
+  display: inline-block;
+  width: fit-content;
+  cursor: pointer;
 }
+
 .search-form__label-text {
 }
+
 .visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
+
 .search-form__textfield {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  background-color: inherit;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  min-width: 225px;
+  appearance: none;
 }
+
+.search-form__textfield:active {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  /*FIXME:*/
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  /*FIXME:*/
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__checkbox-list {
+  /* Обёртка .search-form__checkbox-list создана специально для того, чтобы выстроить чекбоксы в линию. */
+  display: flex; /*FIXME:*/
+  align-items: center; /*FIXME:*/
 }
+
 .search-form__checkbox {
 }
 .search-form__pseudo-checkbox {
 }
+
 .button {
+  color: inherit;
+  /* text-align: center; */
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: inherit;
+  border: 1px solid #fff;
+  height: 34px;
+  cursor: pointer;
 }
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__submit-button {
+  width: 194px;
 }
+
 .content__details {
+  display: inline-block;
+  align-self: end;
+  max-width: 100%;
+  max-height: 100%;
 }
+
 .title {
+  color: #FFF;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
 }
+
 .content__accent {
+  color: #545050;
 }
+
 .content__list {
+  /* ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК */
+  position: relative;
+  height: 298px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
 
 .preloader-template {
 }
@@ -92,24 +230,56 @@ ol {
 }
 .content__list-item {
 }
+
 .content__card-link {
+  text-decoration: none;
+  color: #fff;
 }
+
 .content__video-card {
+  display: flex;
+  align-items:start
 }
+
 .content__video-card-description-container {
+  width: 100%;
 }
+
 .content__video-card-title {
+  color: #fff;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
+
 .content__video-card-description {
+  color: #fff;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
 }
+
 .content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
+
 .more-button-template {
 }
-.button {
-}
+
 .more-button {
+  width: 100%;
+  margin-bottom: 1px;
 }
+
 .error-template {
 }
 .error {
