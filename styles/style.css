@@ -152,9 +152,8 @@ ol {
 
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
+  display: inline-block;
+  margin: auto;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -162,9 +161,8 @@ ol {
 
 .search-form__pseudo-checkbox:active::before {
   content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
+  display: inline-block;
+  margin: auto;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -175,7 +173,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -275,7 +273,7 @@ ol {
 }
 
 .content__card-link {
-  display: block; /*FIXME:*/
+  display: block;
   text-decoration: none;
   color: #fff;
   margin: 2px;
