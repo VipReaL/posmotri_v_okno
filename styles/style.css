@@ -149,8 +149,7 @@ ol {
 
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  display: inline-block;
-  margin: auto;
+  display: flex;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -158,8 +157,7 @@ ol {
 
 .search-form__pseudo-checkbox:active::before {
   content: "";
-  display: inline-block;
-  margin: auto;
+  display: flex;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -171,6 +169,8 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -212,10 +212,9 @@ ol {
 }
 
 .content__details {
-  display: inline-block;
-  align-self: end;
-  max-width: 100%;
-  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .title {
@@ -224,9 +223,8 @@ ol {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
-  margin-bottom: 26px;
 }
 
 .content__accent {
@@ -238,14 +236,10 @@ ol {
   position: relative;
   height: 298px;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
-.content__list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__list-item:active {
@@ -290,7 +284,7 @@ ol {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   margin-bottom: 6px;
 }
@@ -301,7 +295,7 @@ ol {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px;
+  line-height: 0.9;
 }
 
 .content__video-card-thumbnail {
