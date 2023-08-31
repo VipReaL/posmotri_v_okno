@@ -107,9 +107,6 @@ ol {
     outline-offset: 1px;
 }
 
-/* .search-form__label-text {
-} */
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -251,19 +248,6 @@ ol {
   height: 0;
 }
 
-/* .preloader-template {
-} */
-/* .preloader {
-} */
-/* .preloader-chasing-squares {
-} */
-/* .square {
-} */
-/* .cards-list-item-template {
-} */
-/* .content__list-item {
-} */
-
 .content__list-item:active {
   background-color: #545050;
 }
@@ -327,17 +311,7 @@ ol {
   object-position: center;
 }
 
-/* .more-button-template {
-} */
-
 .more-button {
   width: 395px;
   margin: 2px;
 }
-
-/* .error-template {
-} */
-/* .error {
-} */
-/* .error__title {
-} */
